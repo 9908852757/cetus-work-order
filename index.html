@@ -1320,7 +1320,7 @@ input[type="checkbox"] {
       ["Required delivery", data.order && data.order.requiredDelivery],
       ["Vehicle model", data.order && data.order.vehicle],
       ["Service advisor", data.order && data.order.serviceAdvisor],
-      ["Ashwath sir involvement", data.approvals && data.approvals.ashwathInvolved ? "Involved; order details explained (order above INR 1,50,000)" : ""],
+      ["Ashwath sir involvement", data.approvals && data.approvals.ashwathInvolved ? "Ashwath sir involved; all order details explained" : ""],
     ].map(([label, value]) => ({ label, value: pdfSafe(value) })).filter((item) => item.value);
 
     const branding = (data.orderTypes || [])
